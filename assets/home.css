@@ -36,18 +36,19 @@
 .hero-title {
     color: var(--white-clr);
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 800;
     max-width: 40rem;
 }
 .hero-sub__title {
     color: var(--white-clr);
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 600;
     max-width: 28rem;
     margin-top: .8rem;
     margin-bottom: 3rem;
 }
-.hook-container a {
+.hook-container a,
+.call-action {
     background-color: var(--white-clr);
     color: var(--primary-clr);
     text-decoration: none;
@@ -63,10 +64,10 @@
 @media screen and (min-width: 700px) {
     .hero-title {
         font-size: 2.5rem;
-        font-weight: 800;
     }
     .hero-sub__title {
         font-size: 1.2rem;
+        font-weight: 400;
         margin-top: 1.2rem;
         margin-bottom: 4rem;
         max-width: 35rem;
@@ -133,5 +134,137 @@
 }
 .benefit
 .benefit-desc {
-    font-size: .95rem;
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+@media screen and (min-width: 768px) {
+    .benefit
+    .benefit-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+}
+
+/* -- section two -- */
+.section-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    max-width: 30rem;
+    margin-bottom: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+    /* -- section two -- */
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.8rem;
+    }
+}
+.milk-types-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.milk-type {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.milk-type img {
+    width: 300px;
+}
+@media screen and (min-width: 1240px) {
+    .milk-type {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-bottom: 5rem;
+    }
+    .milk-type-info-container {
+        margin-left: 1rem;
+    }
+    .milk-type img {
+        width: 300px;
+    }
+}
+.milk-type-info-container
+h3 {
+    max-width: 20rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: .5rem 0;
+}
+.milk-type-info-container
+p {
+    max-width: 18rem;
+    line-height: 1.5rem;
+}
+
+@media screen  and (min-width: 1024px) {
+    .milk-type-info-container
+    h3 {
+        max-width: 18rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .milk-type-info-container
+    p {
+        margin-top: .5rem;
+        max-width: 18rem;
+        line-height: 2rem;
+    }
+}
+
+/* section three */
+.testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.testimony-container {
+    background-color: var(--card-clr);
+    border-radius: 10px;
+    width: 22rem;
+    padding: 2rem 0 2rem 2.2rem;
+}
+.testimony-container p {
+    max-width: 18rem;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.testimony-container h3 {
+    max-width: 15rem;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    font-weight: 600;
+}
+
+/* -- call to action part */
+
+.middle-call-to-action {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 5rem 0;
+}
+.middle-call-to-action h2 {
+    max-width: 30rem;
+    font-weight: 400;
+}
+.middle-call-to-action h2 {
+    max-width: 30rem;
+    font-weight: 400;
+}
+.call-action {
+    background-color: var(--card-clr);
+    border-radius: 0;
+    padding: 1.3rem 3rem;
+}
+.call-action:hover {
+    background-color: var(--input-border-clr);
 }
