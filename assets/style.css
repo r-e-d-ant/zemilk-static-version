@@ -23,4 +23,5 @@ ul {
 body {
     background-color: var(--white-clr);
     color: var(--primary-clr);
+    font-family: 'Poppins', sans-serif;
 }
