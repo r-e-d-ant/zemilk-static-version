@@ -1,1 +1,85 @@
 
+
+.hero-hook__container {
+    padding: .5rem;
+    background-image: url(./images/cows.png);
+    background-color: #cccccc;
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.hook-container {
+    padding-top: 2rem;
+}
+@media screen and (min-width: 700px) {
+    .hero-hook__container {
+        padding: 0 1rem;
+    }
+    .hook-container {
+        padding-top: 5rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero-hook__container {
+        padding: 0 1rem;
+    }
+    .hook-container {
+        padding-top: 7rem;
+    }
+}
+.hero-title {
+    color: var(--white-clr);
+    font-size: 1.8rem;
+    font-weight: 600;
+    max-width: 40rem;
+}
+.hero-sub__title {
+    color: var(--white-clr);
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 28rem;
+    margin-top: .8rem;
+    margin-bottom: 3rem;
+}
+.hook-container a {
+    background-color: var(--white-clr);
+    color: var(--primary-clr);
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-radius: 45px;
+    transition: background-color 150ms;
+}
+.hook-container a:hover {
+    background-color: var(--input-border-clr);
+}
+@media screen and (min-width: 700px) {
+    .hero-title {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+    .hero-sub__title {
+        font-size: 1.2rem;
+        margin-top: 1.2rem;
+        margin-bottom: 4rem;
+        max-width: 35rem;
+    }
+    .hook-container a {
+        padding: 1rem 4rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+        font-weight: 800;
+        max-width: 50rem;
+        line-height: 4rem;
+    }
+    .hero-sub__title {
+        font-size: 1.4rem;
+        max-width: 40rem;
+    }
+}
