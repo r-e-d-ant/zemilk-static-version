@@ -1,9 +1,13 @@
 
+.hero-section {
+    position: relative;
+}
 
+/* -- hero section sylings -- */
 .hero-hook__container {
     padding: .5rem;
     background-image: url(./images/cows.png);
-    background-color: #cccccc;
+    background-color: var(--white-clr-alt);
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,4 +86,51 @@
         font-size: 1.4rem;
         max-width: 40rem;
     }
+}
+
+/* -- benefits sylings -- */
+.benefits-section {
+    padding: 0 .5rem;
+    margin: 1.5rem 0 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+    /* -- benefits sylings -- */
+    .benefits-section {
+        padding: 0 1rem;
+    }
+}
+.benefit {
+    margin: .5rem 0;
+    background-color: var(--card-clr);
+    padding: 2rem;
+    width: 19.5rem;
+    height: 15rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.benefit
+.no {
+    position: absolute;
+    top: 1rem;
+    left: .5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--gray-clr);
+}
+.benefit
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.benefit
+.benefit-desc {
+    font-size: .95rem;
 }
