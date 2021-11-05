@@ -199,7 +199,7 @@ h3 {
 .milk-type-info-container
 p {
     max-width: 18rem;
-    line-height: 1.5rem;
+    line-height: 1.5;
 }
 
 @media screen  and (min-width: 1024px) {
@@ -208,12 +208,13 @@ p {
         max-width: 18rem;
         font-size: 1.5rem;
         font-weight: 400;
+        margin-top: 0;
     }
     .milk-type-info-container
     p {
         margin-top: .5rem;
         max-width: 18rem;
-        line-height: 2rem;
+        line-height: 1.5;
     }
 }
 
