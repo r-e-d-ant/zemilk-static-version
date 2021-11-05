@@ -102,6 +102,7 @@ header {
     }
     /* navbar */
     .navbar {
+        z-index: 1;
         background-color: var(--primary-clr);
         position: absolute;
         top: 4.2rem;
