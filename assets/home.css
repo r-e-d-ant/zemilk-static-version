@@ -91,7 +91,7 @@
 /* -- benefits sylings -- */
 .benefits-section {
     padding: 0 .5rem;
-    margin: 1.5rem 0 3rem 0;
+    margin: .1rem 0 3rem 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -101,6 +101,7 @@
     /* -- benefits sylings -- */
     .benefits-section {
         padding: 0 1rem;
+        margin: 1.2rem 0 3rem 0;
     }
 }
 .benefit {
