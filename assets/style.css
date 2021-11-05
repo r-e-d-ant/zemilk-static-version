@@ -19,6 +19,12 @@ li,
 ul {
     list-style: none;
 }
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
 
 body {
     background-color: var(--white-clr);

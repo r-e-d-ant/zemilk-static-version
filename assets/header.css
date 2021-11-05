@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* * {
+    border: thin solid red;
+} */
 
 header {
     display: flex;
@@ -16,6 +19,12 @@ header {
     font-weight: 900;
 }
 
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1rem .5rem;
+    }
+}
+
 /* nav items */
 .navbar
 .nav-lists {
@@ -25,10 +34,19 @@ header {
 .nav-lists
 .nav-item {
     margin: 0 1rem;
+}
+.nav-lists
+.nav-item
+.nav-link {
+    color: var(--white-clr);
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-decoration: none;
     position: relative;
 }
 .nav-lists
-.nav-item::before {
+.nav-item
+.nav-link::before {
     content: "";
     background-color: var(--white-clr);
     position: absolute;
@@ -40,18 +58,16 @@ header {
     transition: transform 300ms;
 }
 .nav-lists
-.nav-item:hover::before {
+.nav-item
+.nav-link:hover::before {
     transform: scaleX(1);
     transform-origin: left;
 }
-.nav-lists
-.nav-item
-.nav-link {
-    color: var(--white-clr);
-    font-size: 1.05rem;
-    font-weight: 500;
-    text-decoration: none;
+.nav-menus {
+    display: none;
 }
+
+/* active nav link sylings*/
 .active {
     position: relative;
 }
@@ -64,8 +80,55 @@ header {
     height: .14rem;
     transform: scaleX(1) !important;
 }
-/* remove margin right to the last item */
-.nav-lists
-.nav-item:last-child {
-    margin: 0;
+@media screen and (min-width: 768px) {
+    /* remove margin right to the last item */
+    .nav-lists
+    .nav-item:last-child {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-menus {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bx-menu,
+    .bx-x {
+        cursor: pointer;
+        color: var(--white-clr);
+        font-size: 2.5rem;
+    }
+    .bx-x {
+        display: none;
+    }
+    .showClose {
+        display: block;
+    }
+    /* navbar */
+    .navbar {
+        background-color: var(--primary-clr);
+        position: absolute;
+        top: 4.2rem;
+        right: 0;
+        border-bottom-left-radius: .2rem;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 300ms transform;
+    }
+    .showMenu {
+        transform: scaleY(1);
+    }
+    /* nav items */
+    .navbar
+    .nav-lists {
+        flex-direction: column;
+        padding: .8rem 2rem;
+    }
+    /* nav item */
+    .nav-lists
+    .nav-item {
+        margin: 1rem 0;
+    }
 }
