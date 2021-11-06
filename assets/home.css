@@ -175,6 +175,7 @@
 }
 .milk-type img {
     width: 300px;
+    border-radius: 30px 0 30px 0;
 }
 @media screen and (min-width: 1240px) {
     .milk-type {

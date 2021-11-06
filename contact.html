@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/header.css">
+    <link rel="stylesheet" href="./assets/home.css">
+    <link rel="stylesheet" href="./assets/footer.css">
     <link rel="stylesheet" href="./assets/contact.css">
     <title>ZeMilk - Contact</title>
 </head>
@@ -13,25 +17,32 @@
         <a href="./index.html" class="logo">ZeMilk</a>
         <nav class="navbar">
             <ul class="nav-lists">
-                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
                 <li class="nav-item"><a href="#milks-types" class="nav-link">How We Sell</a></li>
                 <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
             </ul>
         </nav>
+        <div class="nav-menus">
+            <i class='bx bx-menu'></i>
+            <i class="bx bx-x"></i>
+        </div>
     </header>
 
     <main>
         <!-- section one -->
-        <section>
+        <section class="hook-section container">
             <div class="section-contact-hook-container">
-                <h3 class="hook-text"></h3>
-                <img src="" alt="">
+                <div class="hook-text">
+                    <p>Maecenas lacinia tristique interdum. Donec eu quam efficitur, ultrices ex sit amet, elementum sapien. Ut nec rhoncus turpis, ac viverra ipsum. Morbi a vestibulum lorem. Fusce ut lacus volutpat, sagittis sapien quis, ultricies tortor. Nunc ut quam in elit feugiat vehicula.</p>
+                    <p>Praesent eget efficitur urna. Fusce efficitur, elit et dignissim suscipit, augue enim convallis arcu, a rutrum sapien libero quis ante.</p>
+                </div>
+                <img src="./assets/images/milk.png" alt="">
             </div>
         </section>
 
         <!-- section two -->
-        <section class="section form-contact-section">
+        <section class="section form-contact-section container">
             <div class="form-container">
                 <form>
                     <div class="upper-forms">
@@ -59,7 +70,7 @@
                         </div>
                     </div>
                     <div class="lower-input">
-                        <label for="textInput" class="input-label"></label>
+                        <label for="textInput" class="input-label">Message</label>
                         <textarea id="textInput" class="contact-message-input" cols="30" rows="10"></textarea>
                     </div>
 
@@ -79,7 +90,7 @@
                     </li>
                     <!-- info list two -->
                     <li class="info-list-container">
-                        <i class="bx bx-map"></i>
+                        <i class="bx bx-mail-send"></i>
                         <div class="info-list">
                             <h3>amata@domain.com</h3>
                             <h3>amata@domain.com</h3>
@@ -87,7 +98,7 @@
                     </li>
                     <!-- info list three -->
                     <li class="info-list-container">
-                        <i class="bx bx-map"></i>
+                        <i class="bx bx-phone-call"></i>
                         <div class="info-list">
                             <h3>+002 2020 123 020</h3>
                             <h3>+003 92120 921 020</h3>
@@ -101,15 +112,41 @@
     </main>
 
     <footer>
-        <div class="upper-footer">
-            <div class="footer-links-container"></div>
-            <div class="footer-splash-milk"></div>
-        </div>
-        <div class="middle-footer">ZeMilk</div>
-        <div class="lower-footer">
-            <h3>Copyright © 2021 ZeMilk</h3>
+        <div class="upper-footer container">
+            <div class="footer-links-container">
+                <ul class="footer-links">
+                    <h3 class="footer-links-title">Address</h3>
+                    <li class="footer-link">Gihinga 12kG 18st load</li>
+                    <li class="footer-link">Mwaro, Nyabihanga</li>
+                    <li class="footer-link">amata@domain.com</li>
+                    <li class="footer-link">+002 2020 123 020</li>
+                </ul>
+                <ul class="footer-links">
+                    <h3 class="footer-links-title">Product</h3>
+                    <li class="footer-link">Benefits</li>
+                    <li class="footer-link">How we sell</li>
+                    <li class="footer-link">Testimonials</li>
+                    <li class="footer-link">Sponsors</li>
+                </ul>
+                <ul class="footer-links">
+                    <h3 class="footer-links-title">Agency</h3>
+                    <li class="footer-link">About</li>
+                    <li class="footer-link">Contact</li>
+                </ul>
+            </div>
 
-            <div class="author">Developed by <a href="#">T Mugisha</a></div>
+            <div class="footer-splash-milk">
+                <img src="./assets/images/milk.png" alt="milk splash">
+            </div>
+
+        </div>
+
+        <div class="middle-footer logo container">ZeMilk</div>
+
+        <div class="lower-footer container">
+            <span>Copyright © 2021 ZeMilk</span>
+
+            <div class="author">Developed by <a href="https://thierrymugisha.me">T Mugisha</a></div>
 
             <div class="privacy-policy">
                 <a href="#" class="terms">Terms & Conditions</a>
